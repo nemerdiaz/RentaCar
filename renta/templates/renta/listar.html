@@ -1,0 +1,43 @@
+{% extends "renta/base.html" %}
+
+{% block contenido %}
+
+<h2> Listado </h2>
+
+<table class=condiciones>
+    <tr>
+        <th>NOMBRE </th>
+        <th>APELLIDO </th>
+        <th>RUN </th>
+        <th>CORREO </th>
+        <th>OPCIONES </th>
+    </tr>
+
+    {% for a in personas %}
+    
+    <tr>
+        <td>{{ a.nombre }} </td>
+        <td>{{ a.apellido }} </td>
+        <td>{{ a.run }}</td>
+        <td>{{ a.correo }}</td>
+        <td>
+            <a href ="{% url 'eliminar' a.id %}"> Eliminar </a>
+            <a href> - </a>
+            <a href ="{% url 'modificar' a.id %}"> Modificar </a>
+        </td>
+    </tr>
+
+    {% endfor %}
+</table>
+
+{% if messages %}
+    {% for m in messages %}
+    
+    <div> {{ m }}</div>
+
+    {% endfor %}
+{% else %}
+{% endif %}
+
+{% endblock contenido %}
+

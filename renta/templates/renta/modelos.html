@@ -1,0 +1,137 @@
+{% extends 'renta/base.html' %}
+
+{% block contenido %}
+{% load static %}
+<ul class="galeria">
+    <li><a href="#img1"><img src="{% static 'renta/img/modelos/1.jpg' %}" alt=""></a></li>
+    <li><a href="#img2"><img src="{% static 'renta/img/modelos/2.jpg' %}" alt=""></a></li>
+    <li><a href="#img3"><img src="{% static 'renta/img/modelos/3.jpg' %}" alt=""></a></li>
+    <li><a href="#img4"><img src="{% static 'renta/img/modelos/4.jpg' %}" alt=""></a></li>
+    <li><a href="#img5"><img src="{% static 'renta/img/modelos/5.jpg' %}" alt=""></a></li>
+    <li><a href="#img6"><img src="{% static 'renta/img/modelos/6.jpg' %}" alt=""></a></li>
+    <li><a href="#img7"><img src="{% static 'renta/img/modelos/7.jpg' %}" alt=""></a></li>
+    <li><a href="#img8"><img src="{% static 'renta/img/modelos/8.jpg' %}" alt=""></a></li>
+    <li><a href="#img9"><img src="{% static 'renta/img/modelos/9.jpg' %}" alt=""></a></li>
+    <li><a href="#img10"><img src="{% static 'renta/img/modelos/10.jpg' %}" alt=""></a></li>
+    <li><a href="#img11"><img src="{% static 'renta/img/modelos/11.jpg' %}" alt=""></a></li>
+    <li><a href="#img12"><img src="{% static 'renta/img/modelos/12.jpg' %}" alt=""></a></li>
+</ul>
+<div class="model" id="img1">
+    <h3>Suzuki Alto, 4 Personas, Hatchback</h3>
+    <div class="imagen">
+        <a href="#img12">&#60;</a>
+        <a href="#img2"><img src="{% static 'renta/img/modelos/1.jpg' %}"></a>
+        <a href="#img2">></a>
+    </div>
+    <a class="cerrar" href="http://127.0.0.1:8000/modelos">X</a>
+</div>
+
+<div class="model" id="img2">
+        <h3>Renault Symbol, 5 Personas, Sedan</h3>
+        <div class="imagen">
+            <a href="#img1">&#60;</a>
+            <a href="#img3"><img src="{% static 'renta/img/modelos/2.jpg' %}"></a>
+            <a href="#img3">></a>
+        </div>
+        <a class="cerrar" href="http://127.0.0.1:8000/modelos">X</a>
+</div>
+<div class="model" id="img3">
+        <h3>Mazda 3, 5 Personas, Sedam</h3>
+        <div class="imagen">
+            <a href="#img2">&#60;</a>
+            <a href="#img4"><img src="{% static 'renta/img/modelos/3.jpg' %}"></a>
+            <a href="#img4">></a>
+            </div>
+            <a class="cerrar" href="http://127.0.0.1:8000/modelos">X</a>
+</div>
+
+        <div class="model" id="img4">
+                <h3>Suzuki Grand Nomade, 5 Personas SUV</h3>
+                <div class="imagen">
+                    <a href="#img3">&#60;</a>
+                    <a href="#img5"><img src="{% static 'renta/img/modelos/4.jpg' %}"></a>
+                    <a href="#img5">></a>
+                </div>
+                <a class="cerrar" href="http://127.0.0.1:8000/modelos">X</a>
+            </div>
+
+            <div class="model" id="img5">
+                    <h3>Toyota RAV4, 5 Personas, SUV 4x4</h3>
+                    <div class="imagen">
+                        <a href="#img4">&#60;</a>
+                        <a href="#img6"><img src="{% static 'renta/img/modelos/5.jpg' %}"></a>
+                        <a href="#img6">></a>
+                    </div>
+                    <a class="cerrar" href="http://127.0.0.1:8000/modelos">X</a>
+                </div>
+
+                <div class="model" id="img6">
+                        <h3>Nisan x-Trail, 5 Personas, Suv</h3>
+                        <div class="imagen">
+                            <a href="#img5">&#60;</a>
+                            <a href="#img7"><img src="{% static 'renta/img/modelos/6.jpg' %}"></a>
+                            <a href="#img7">></a>
+                        </div>
+                        <a class="cerrar" href="http://127.0.0.1:8000/modelos">X</a>
+                    </div>
+
+                    <div class="model" id="img7">
+                            <h3>Mazda 5 Van, 7 Personas, Van</h3>
+                            <div class="imagen">
+                                <a href="#img6">&#60;</a>
+                                <a href="#img8"><img src="{% static 'renta/img/modelos/7.jpg' %}"></a>
+                                <a href="#img8">></a>
+                            </div>
+                            <a class="cerrar" href="http://127.0.0.1:8000/modelos">X</a>
+                        </div>
+
+                        <div class="model" id="img8">
+                                <h3>Dodge Grand Caravan, 7 Personas, Van</h3>
+                                <div class="imagen">
+                                    <a href="#img7">&#60;</a>
+                                    <a href="#img9"><img src="{% static 'renta/img/modelos/8.jpg' %}"></a>
+                                    <a href="#img9">></a>
+                                </div>
+                                <a class="cerrar" href="http://127.0.0.1:8000/modelos">X</a>
+                            </div>
+
+                            <div class="model" id="img9">
+                                    <h3>Hyundai H1, 9 Personas, Van</h3>
+                                    <div class="imagen">
+                                        <a href="#img8">&#60;</a>
+                                        <a href="#img8"><img src="{% static 'renta/img/modelos/9.jpg' %}"></a>
+                                        <a href="#img10">></a>
+                                    </div>
+                                    <a class="cerrar" href="http://127.0.0.1:8000/modelos">X</a>
+                                </div>
+
+                                <div class="model" id="img10">
+                                        <h3>BMW z4, 2 Personas, Deportivo</h3>
+                                        <div class="imagen">
+                                            <a href="#img9">&#60;</a>
+                                            <a href="#img11"><img src="{% static 'renta/img/modelos/10.jpg' %}"></a>
+                                            <a href="#img11">></a>
+                                        </div>
+                                        <a class="cerrar" href="http://127.0.0.1:8000/modelos">X</a>
+                                    </div>
+
+                                    <div class="model" id="img11">
+                                            <h3>BMW i8, 2 Personas, Deportivo</h3>
+                                            <div class="imagen">
+                                                <a href="#img10">&#60;</a>
+                                                <a href="#img12"><img src="{% static 'renta/img/modelos/11.jpg' %}"></a>
+                                                <a href="#img12">></a>
+                                            </div>
+                                            <a class="cerrar" href="http://127.0.0.1:8000/modelos">X</a>
+                                        </div>
+
+                                        <div class="model" id="img12">
+                                                <h3>Audi R8, 2 Personas, Deportivo</h3>
+                                                <div class="imagen">
+                                                    <a href="#img11">&#60;</a>
+                                                    <a href="#img1"><img src="{% static 'renta/img/modelos/12.jpg' %}"></a>
+                                                    <a href="#img1">></a>
+                                                </div>
+                                                <a class="cerrar" href="http://127.0.0.1:8000/modelos">X</a>
+                                            </div>
+{% endblock contenido %}

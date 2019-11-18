@@ -1,0 +1,103 @@
+
+.contenedor{
+	width: 80%;
+    max-width: 600px;
+	margin: 20px auto
+}
+
+.formulario .contenedor-inputs{
+	/*padding: 20px;*/
+	background: #fff;
+	border-radius: 6px 6px 0 0;
+}
+
+.formulario input[type="text"],
+.formulario input[type="email"],
+.formulario input[type="integer"],
+.formulario input[type="date"],select{
+	display: block;
+	width: 100%;
+	margin-bottom: 20px;
+	padding:15px 10px;
+	border: none;
+	border-bottom: 2px solid #ccc;/*guin bajo las letras*/
+	font-family: 'Lato', sans-serif;
+	font-size: 12px;
+
+}
+
+.formulario input[type="text"]:focus,
+.formulario input[type="email"]:focus,
+.formulario input[type="integer"]:focus,
+.formulario input[type="date"],select{
+	border-bottom: 2px solid #333; /*efecto para cuando se presione sobre el formulario*/
+}
+
+/*configurar sexo*/
+
+.formulario input[type=radio]{
+	display: none;/*Eliminar los cuadrados del checkbox*/
+}
+
+.formulario .sexo{
+	display: flex;
+	flex-wrap:nowrap;
+	justify-content:  space-between;
+	margin-bottom: 16px;
+}
+
+.formulario .label-radio{
+	background: rgba(28, 111, 182 ,.4);/*color transparente*/
+	color: #fff;
+	padding:10px;
+	text-align: center;
+	width: 49.5%;
+}
+
+/*seleccionar el sexo */
+
+.formulario input[type="radio"]:checked + .label-radio{
+	background: #2a5a82;
+}
+
+/*checkbox*/
+
+.formulario .terminos{
+	text-align: center;
+	color: #424242;
+}
+
+.formulario .terminos .label{
+	margin-left: 10px;
+}
+
+.formulario .error{
+	display: none;
+	margin-top: 20px;
+	border-radius: 2px;
+	background: #ce1818;
+	color: #fff;
+	padding: 10px 10px;
+	padding-left: 40px;
+}
+
+/*boton*/
+
+.formulario .btn{
+	width: 100%;
+	text-align: center;
+	background: #71808d;
+	color: #fff;
+	border:none;
+	display: block;
+	padding: 15px 10px;
+	cursor: pointer;
+	border-radius: 0 0 6px 6px;
+	font-family: 'Lato', sans-serif;
+	font-size: 12px;
+
+}
+
+.formulario .btn:hover{
+	background: #333;
+}

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+
+    <title>Best Price</title>
+
+    {% load static %}
+
+	<link rel="stylesheet" type="text/css" href="{% static 'renta/css/main.css' %}">
+	<link rel="stylesheet" type="text/css" href="{% static 'renta/css/manu.css' %}">
+	<link rel="stylesheet" type="text/css" href="{% static 'renta/css/home.css' %}">
+	<link rel="stylesheet" type="text/css" href="{% static 'renta/css/contacto.css' %}">
+	<link rel="stylesheet" type="text/css" href="{% static 'renta/css/galeria.css' %}">
+	<link rel="stylesheet" type="text/css" href="{% static 'renta/css/nosotros.css' %}">
+	<link rel="stylesheet" type="text/css" href="{% static 'renta/css/condiciones.css' %}">
+	<link rel="stylesheet" type="text/css" href="{% static 'renta/css/formulario.css' %}">
+	<link rel="stylesheet" href="{% static 'renta/fonts/style.css' %}">
+	<link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+
+	
+</head>
+<body>
+
+	<header>	
+		<h1>
+			<a class="menu" href="home">
+					<img class="menu_logo" id="logo" src="{% static 'renta/img/Header.png' %}" alt="logo" />
+			</a>			
+		</h1>
+
+	<div class="menu_bar">
+		<a class="bt-menu"> <span class="icon-menu"></span> MENU</a>
+	</div>
+	<nav>
+			<ul>			
+					<li><a class="opt menu" href="{% url 'home' %}"> <span class="icon-home"></span> HOME</a> </li>
+					<li><a class="opt menu" href="{% url 'solicitar' %}"> <span class="icon-shop"></span> REGISTRAR USUARIO</a> </li>
+					<li><a class="opt menu" href="{% url 'modelos' %}"> <span class="icon-news"></span> MODELOS</a> </li>
+					<li><a class="opt menu" href="{% url 'listar' %}"> <span class="icon-v-card"></span> LISTADO</a> </li>
+					<li><a class="opt menu" href="nosotros"> <span class="icon-users"></span> NOSOTROS</a> </li>
+					<li><a class="opt menu" href="contacto"> <span class="icon-old-phone"></span> CONTACTO</a></li>
+			</ul>
+	</nav>
+
+</header>
+
+	<div class="contenido">
+		{% block contenido %}
+        
+        {% endblock contenido %}
+	</div>
+	<footer>
+		Copyright &copy;  2019 Chile Best Price
+		<br>
+		Política de Privacidad
+	</footer>	
+	
+	<!--<script src="app/services/Llama.js"></script>
+	<script src="app/app.js"></script>-->
+	<script src="http://code.jquery.com/jquery-latest.js"></script>
+	<!--<script src="app/services/menu.js"> </script>
+	<script src="app/services/formulario.js"> </script>-->
+
+</body>
+
+</html>

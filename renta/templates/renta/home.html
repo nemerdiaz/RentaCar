@@ -1,0 +1,23 @@
+{% extends 'renta/base.html' %}
+
+{% block contenido %}
+{% load static %}
+<div class="carrusel">
+    <ul>
+        <li><img src="{% static 'renta/img/carrusel/photo1.jpg' %}" alt=""></li>
+        <li><img src="{% static 'renta/img/carrusel/photo2.jpg' %}" alt=""></li>
+        <li><img src="{% static 'renta/img/carrusel/photo3.jpg' %}" alt=""></li>
+        <li><img src="{% static 'renta/img/carrusel/photo4.jpg' %}" alt=""></li>
+    </ul>
+</div>
+
+
+<div class="por">
+    PORQUE NOSOTROS?
+</div>
+
+<div class="porque">
+    Somos la empresa mas economica en la ciudad y mas segura, corremos con seguros en caso de choque o alguna emergencia
+</div>
+
+{% endblock contenido %}

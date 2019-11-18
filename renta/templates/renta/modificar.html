@@ -1,0 +1,22 @@
+{% extends "renta/base.html" %}
+
+{% block contenido %}
+		<!--  CONTENEDOR centro-->
+		<div class="contenedor">
+			<form action="" class="formulario" id="formulario" name="formulario" method="POST"> <!-- class para css, id para js -->
+            {% csrf_token %}
+
+            <input type="hidden" name="id" id="id" value="{{ persona.id }}">
+				<div class="contenedor-inputs">
+					<input type="text" name="nombre" placeholder="Nombre" value = "{{ persona.nombre}}">
+					<input type="text" name="apellido" placeholder="Apellido" value = "{{ persona.apellido}}">
+                    <input type="integer" name="run" placeholder="RUN" value = "{{ persona.run}}">
+					<input type="email" name="correo" placeholder="Correo" value = "{{ persona.correo}}">
+					<br>
+				</div>
+	
+				<input type="submit" class="btn" value="Modificar">      
+			</form>
+		</div>
+        <h3> {{mensaje}} </h3>
+{% endblock contenido %}

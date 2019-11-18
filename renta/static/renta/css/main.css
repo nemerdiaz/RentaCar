@@ -1,0 +1,38 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", sans-serif;
+    text-align: center;
+    font-size: 13px;
+}
+
+
+header a, nav a {
+    text-decoration: none;
+}
+
+/*Color del copy*/
+footer {
+    background-color: #333;
+    color: #bbb;
+}
+
+
+/*Color de fondo de la portada*/
+header {
+    background-color: rgb(255, 255, 255);
+    padding: 1px; /*Tamaño del fondo de la portada*/
+}
+
+/*Tamaño del logo*/
+#logo {
+    width: 200px;
+    float: center;
+    background-color: rgb(255, 255, 255);
+}
+
+/*Tamaño del fondo del copy*/
+footer{
+    position: unset;
+    padding: 10px;
+}

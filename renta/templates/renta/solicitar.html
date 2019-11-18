@@ -1,0 +1,63 @@
+{% extends "renta/base.html" %}
+
+{% block contenido %}
+		<!--  CONTENEDOR centro-->
+		<div class="contenedor">
+			<form action="" class="formulario" id="formulario" name="formulario" method="POST"> <!-- class para css, id para js -->
+            {% csrf_token %}
+				<div class="contenedor-inputs">
+					<input type="text" name="nombre" placeholder="Nombre">
+					<input type="text" name="apellido" placeholder="Apellido">
+                    <input type="integer" name="run" placeholder="RUN">
+					<input type="email" name="correo" placeholder="Correo">
+					<!-- <input type="text" name="comentario" placeholder="Comentarios">
+	
+					<label for="LugarRetiro"> Sucursal Retiro</label>
+					<select id="LugarRetiro" name="lugarRetiro">
+						<option>-- Seleccionar --</option>
+						<option>Las Condes</option>
+						<option>Santiago Centro</option>
+						<option>Providencia</option>-->
+					<!-- <label for="FechaRetiro"> Fecha Retiro</label> -->
+					<!--<input type="date" name="fechaRetiro" id="dateRetiro"> -->
+                    <!--<input type="text" name="direccionOut" placeholder="Dirección Origen">
+                    </select>
+					<label for="LugarDevolu"> Lugar y direccion devolución</label>
+					<select id="LugarDevolu" name="lugarDevolu">
+						<option>-- Seleccionar --</option>
+						<option>Las Condes</option>
+						<option>Santiago Centro</option>
+						<option>Providencia</option>					-->
+					<!-- <label for="FechaRetiro"> Fecha Retiro</label> -->
+					<!-- <input type="date" name="fechaDevolu" id="dateDevolu" >-->
+                    <!-- </select>
+                    <input type="text" name="direccionIN" placeholder="Dirección Destino">
+	
+					<div class="sexo">
+						<input type="radio" name="sexo"	id="hombre" value="hombre">
+						<label class="label-radio" for="hombre">Hombre</label>
+	
+						<input type="radio" name="sexo"	id="mujer" value="mujer">
+						<label class="label-radio" for="mujer">Mujer</label>
+					</div>
+	
+					<div class="terminos">
+						<input type="checkbox" name="terminos" id="terminos">
+						<label for="terminos">Aceptar Terminos</label>
+					</div>-->
+					<br>
+	
+					<ul class="error" id="error">
+						
+					</ul>
+				</div>
+	
+				<input type="submit" class="btn" value="Registrar">
+                
+			</form>
+		</div>
+
+        <h3> {{mensaje}} </h3>
+			<!--  rut, nombre, apellido, año nacimiento, sexo, telefono, correo -->
+			<!--  marca auto, modelo auto, fecha de retiro, fecha de entrega, retiro de auto (sucursales), -->
+{% endblock contenido %}
