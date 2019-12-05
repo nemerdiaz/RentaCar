@@ -1,13 +1,18 @@
 from django.shortcuts import render, redirect
 from .models import Persona
 from django.contrib import messages
+from django.contrib.auth.decorators import login_required
 
 # Create your views here.
 
 
+def login(request):
+    return render(request, 'renta/login.html')
+
 def home(request):
     return render(request, 'renta/home.html')
 
+@login_required
 def solicitar(request):
 
     personas= Persona.objects.all()

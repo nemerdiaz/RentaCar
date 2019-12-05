@@ -16,6 +16,7 @@
 	<link rel="stylesheet" type="text/css" href="{% static 'renta/css/nosotros.css' %}">
 	<link rel="stylesheet" type="text/css" href="{% static 'renta/css/condiciones.css' %}">
 	<link rel="stylesheet" type="text/css" href="{% static 'renta/css/formulario.css' %}">
+	<link rel="stylesheet" type="text/css" href="{% static 'renta/css/login.css' %}">
 	<link rel="stylesheet" href="{% static 'renta/fonts/style.css' %}">
 	<link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
 
@@ -39,8 +40,18 @@
 					<li><a class="opt menu" href="{% url 'solicitar' %}"> <span class="icon-shop"></span> REGISTRAR USUARIO</a> </li>
 					<li><a class="opt menu" href="{% url 'modelos' %}"> <span class="icon-news"></span> MODELOS</a> </li>
 					<li><a class="opt menu" href="{% url 'listar' %}"> <span class="icon-v-card"></span> LISTADO</a> </li>
+					{% if user.is_authenticated %}
+					<li><a class="opt menu" href="#"> <span class="icon-users"></span> USER: {{user.username}}</a> </li>
+					
+					<li><a class="opt menu" href="{% url 'logout' %}"> <span class="icon-users"></span> LOGOUT</a></li>
+					
+					{%else%}
+					<li><a class="opt menu" href="{% url 'login' %}"> <span class="icon-users"></span> LOGIN</a></li>
+					<!--
 					<li><a class="opt menu" href="nosotros"> <span class="icon-users"></span> NOSOTROS</a> </li>
-					<li><a class="opt menu" href="contacto"> <span class="icon-old-phone"></span> CONTACTO</a></li>
+					<li><a class="opt menu" href="contacto"> <span class="icon-old-phone"></span> CONTACTO</a></li>	
+					-->
+					{%endif%}
 			</ul>
 	</nav>
 
